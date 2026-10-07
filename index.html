@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFrame test</title>
+</head>
+<body>
+  <div>
+    <h2>Фрейм без разрешений:</h2>
+    <iframe src="frame.html" frameborder="0"></iframe>
+  </div>
+  
+  <div>
+    <h2>Фрейм c <code>allow="clipboard-write"</code>:</h2>
+    <iframe src="frame.html" frameborder="0" allow="clipboard-write"></iframe>
+  </div>
+  
+  <div>
+    <h2>Фрейм c <code>allow="clipboard-write 'self'"</code>:</h2>
+    <iframe src="frame.html" frameborder="0" allow="clipboard-write 'self'"></iframe>
+  </div>
+  
+  <div>
+    <h2>Фрейм c <code>allow="clipboard-write *"</code>:</h2>
+    <iframe src="frame.html" frameborder="0" allow="clipboard-write *"></iframe>
+  </div>
+</body>
+</html>
