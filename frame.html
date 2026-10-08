@@ -13,8 +13,8 @@
 
       button.addEventListener('click', () => {
         const text = Date.now().toString()
-        
-        navigator.clipboard.writeText(text).then((text) => {
+
+        navigator.clipboard.writeText(text).then(() => {
           console.log('worked!', text)
         });
       });
